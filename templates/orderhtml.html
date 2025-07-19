@@ -1,0 +1,40 @@
+{% extends "Jetboz.html" %}
+{% block link %}
+    <link rel="stylesheet" href="/static/BuyIndexhtlm.css">
+
+{% endblock %}
+{% block mixedborder %}
+    <section class="benalert">
+        <div class="mixbuy">
+
+            {% for myorder in myorder %}
+                <div class="myproduct">
+
+                    <div style="background-image:url({{ myorder.img }} )" class="imgbuyproduct">
+                    </div>
+                    <div class="buttonProdut">
+                        <p class="neopayp">{{ myorder.name }}</p>
+                        <h3 class="ByDefertion">By {{ myorder.by }} </h3>
+                        <div class="pricedib">
+                            {{ myorder.price }}
+                            <div style="background-image: url(/static/img/Minecraft_Desktop_1366_Minecoin.png)"
+                                 class="coin">
+
+                            </div>
+                        </div>
+                        <div class="buybuttonsdiv">
+                            <button class="BuyButtonfororder">
+                                You order has been completed
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+{% endblock %}

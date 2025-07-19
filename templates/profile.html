@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/img/Homepage_Download-Launcher_Creeper-Logo_500x500.avif">
+
+    <title>Profile Page - Minecraft Style</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap');
+
+        body {
+            font-family: 'Pixelify Sans', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-size: 20px;
+            font-style: normal;
+            background-color: #2a2a2a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            border: 2px solid #3e3e3e;
+            padding: 20px;
+            -webkit-box-shadow: inset .25rem 0 0 rgba(0, 0, 0, .901961),
+            inset 0 -.25rem 0 rgba(0, 0, 0, .901961),
+            inset -.25rem 0 0 #3d3938,
+            inset 0 .25rem 0 #3d3938;
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+            flex-direction: column;
+            background: #2a2a2a;
+            box-shadow: 0 4px 0 0 rgba(255, 255, 255, .24) inset,
+            -4px 0 0 0 rgba(255, 255, 255, .24) inset,
+            0 -4px 0 0 rgba(0, 0, 0, .24) inset,
+            4px 0 0 0 rgba(0, 0, 0, .24) inset;
+            text-align: center;
+            width: 320px;
+        }
+
+        .imgbase {
+            width: 320px;
+            height: 100px;
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+        }
+
+        .one {
+            width: 50px;
+            height: 50px;
+        }
+
+        .Backtohome {
+            width: 222px;
+            height: 50px;
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .imglight {
+            width: 137px;
+            height: 82px;
+        }
+
+        .adminpageopenpage {
+            width: 100px;
+
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background-color: #2a2a2a;
+            color: white;
+            box-shadow: 0 4px 0 0 rgba(255, 255, 255, .24) inset,
+            -4px 0 0 0 rgba(255, 255, 255, .24) inset,
+            0 -4px 0 0 rgba(0, 0, 0, .24) inset,
+            4px 0 0 0 rgba(0, 0, 0, .24) inset;
+        }
+
+
+        .profile-img {
+            margin-bottom: 10px;
+        }
+
+        .profile-img img {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #3e3e3e;
+        }
+
+        .profile-name, .profile-info, .profile-email, .profile-password {
+            margin: 10px 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 0px #000;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(static/img/feature-16-1920x1280.jpg)">
+{% if user %}
+    
+<a style="text-decoration: none; color: white" href="{{ url_for("hello_world") }}">
+    <div class="Backtohome">
+        <img class="imglight" src="/static/img/arrow-left-solid.svg" alt="">
+        <p>Back to home page</p>
+
+    </div>
+</a>
+
+<div class="container">
+
+    <div class="profile-img">
+        <img src="/static/img/Homepage_Download-Launcher_Creeper-Logo_500x500.avif" alt="Profile Picture">
+    </div>
+    <div class="profile-name">
+        <h2>{{ user.name }}</h2>
+    </div>
+    <div class="profile-info">
+        <p>Minecraft player</p>
+    </div>
+    <div class="profile-email">
+        <p>Email: {{ user.email }}</p>
+    </div>
+
+        <a style="text-decoration: none; color: white" href="{{ url_for("logaut") }}">
+            <button class="adminpageopenpage">
+                LOGAUT
+            </button>
+        </a>
+
+
+
+
+{#    {% if user.role == "derector" %}#}
+{#        <a style="text-decoration: none; color: white" href="{{ url_for("admin") }}">#}
+{#            <button class="adminpageopenpage">#}
+{#                derector page#}
+{##}
+{#            </button>#}
+{#        </a>#}
+{##}
+{##}
+{#    {% endif %}#}
+    {% if user.role == "admin" or user.role == "derector" %}
+        <a style="text-decoration: none; color: white" href="{{ url_for("uslist") }}">
+            <button class="adminpageopenpage">
+                User_list
+
+            </button>
+        </a>
+    {% endif %}
+
+    <div class="imgbase">
+        <img class="one" src="/static/img/xbox-brands.svg" alt="">
+        <img class="one" src="/static/img/Mojang2020Logo.png" alt="">
+
+    </div>
+
+</div>
+{% endif %}
+{% if not user %}
+    <a href="{{ url_for("Logb") }}"></a>
+
+{% endif %} 
+
+</body>
+
+
+
+
+</html>

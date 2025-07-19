@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Minecraft Official Site | Minecraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/static/minecraftLDbuy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Pixelify+Sans:wght@400..700&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/img/Homepage_Download-Launcher_Creeper-Logo_500x500.avif">
+</head>
+
+
+<body>
+<header class="minecraftMenu">
+    <img class="Minecraftlogo" src="/static/img/Global-Header_MCCB-Logo_300x51.svg" alt="">
+    <div class="mineihead">
+        <button class="games1">
+            <h4>GAMES</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+        </button>
+        <button class="games2">
+            <h4>SHOP</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+        </button>
+        <button class="games3">
+            <h4>COMMUNITY</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+        </button>
+        <button class="games4">
+            <h4>SUPPORT</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+        </button>
+
+
+    </div>
+    <div class="accsea">
+        <button class="search">
+            <img class="searchimg" src="/static/img/magnifying-glass-solid%20(1).svg" alt="">
+            <h4>SEARCH</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+
+        </button>
+
+     {% if user %}
+            <a href="{{ url_for("profile") }}">
+                <button class="accaunt">
+                    <img class="accimg" src="/static/img/lock-solid.svg" alt="">
+                    <h4>ACCOUNT</h4>
+                    <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+
+                </button>
+            </a>
+        {% endif %}
+        {% if not user %}
+             <a href="{{ url_for("Logb") }}">
+                <button class="accaunt">
+                    <img class="accimg" src="/static/img/lock-solid.svg" alt="">
+                    <h4>ACCOUNT</h4>
+                    <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+
+                </button>
+            </a>
+        {% endif %}
+
+
+    </div>
+</header>
+<div class="containerdf1 ">
+
+    {#    <div class="minecraftgiftcadmenu">#}
+    {#        <div class="clovnrightstic">#}
+    {##}
+    {#        </div>#}
+    {#        <p>Go to Downloads</p>#}
+    {#        <p>Redeem a Gift Code</p>#}
+    {#    </div>#}
+    {#</div>#}
+    <div class="content1">
+        <div class="grid">
+            <a style="text-decoration: none;color: white" href="{{ url_for("hello") }}">
+                <div class="card">
+                    <img src="/static/img/Global-Header_Image-Tile_MC-Java-Bedrock_570x321.jpg" alt="Minecraft">
+                    <h3 class="b">Minecraft</h3>
+                    <p class="c">Explore your own unique world, survive the night, and create anything you can
+                        imagine!</p>
+                </div>
+            </a>
+            <a style="text-decoration: none;color: white" href="{{ url_for("md") }}">
+                <div class="card2ip">
+                    <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_MC-Dungeons_321x321.jpg"
+                         alt="Marketplace">
+                    <h3 class="b">Minecraft Dungeons</h3>
+                    <p class="c">Discover an action-adventure game inspired by classic dungeon crawlers.</p>
+                </div>
+            </a>
+
+            <a style="text-decoration: none;color: white" href="{{ url_for("mlde") }}">
+                <div class="card2ip">
+                    <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_MC-Legends_321x321.webp"
+                         alt="Minecraft Realms">
+                    <h3 class="b">Minecraft Legends</h3>
+                    <p class="c">Lead your allies to defend the Overworld in this exciting action strategy game.</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="right-sidebar">
+            <p class="fightderemember">Buy Minecraft</p>
+            <p class="fightderemember">Buy Minecraft Triple Bundle</p>
+            <p class="fightderemember">Marketplace Pass</p>
+            <p class="fightderemember">New to Minecraft?</p>
+            <p class="fightderemember">Servers</p>
+            <p class="fightderemember">Try Minecraft Free</p>
+            <p class="fightderemember">Play Minecraft Classic</p>
+
+
+        </div>
+    </div>
+
+</div>
+<div class="containerdf2 ">
+    <div class="sidebar">
+        <ul class="masanger63nd">
+            <li class="bmw1e">Games</li>
+            <a class="bmw2e" href="{{ url_for("mkp") }}">
+                <li>Marketplace</li>
+            </a>
+
+            <li class="bmw3e">Merch</li>
+        </ul>
+        <div class="minecraftgiftcadmenu">
+            <div class="clovnrightstic">
+
+            </div>
+            <p>Redeem a Gift Code</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="grid">
+            <div class="card">
+                <img src="/static/img/Global-Header_Image-Tile_MC-Java-Bedrock_570x321.jpg" alt="Minecraft">
+                <h3 class="b">Minecraft</h3>
+                <p class="c">Explore your own unique world, survive the night, and create anything you can imagine!</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_MC-Dungeons_321x321.jpg"
+                     alt="Marketplace">
+                <h3 class="b">Minecraft Dungeons</h3>
+                <p class="c">Discover an action-adventure game inspired by classic dungeon crawlers.</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_MC-Legends_321x321.webp"
+                     alt="Minecraft Realms">
+                <h3 class="b">Minecraft Legends</h3>
+                <p class="c">Lead your allies to defend the Overworld in this exciting action strategy game.</p>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <p class="fightderememberr">Marketplace Pass</p>
+            <p class="fightderemember">Become a Creator</p>
+            <p class="fightderemember">Become a Partner</p>
+
+        </div>
+    </div>
+
+</div>
+<div class="containerdf3 ">
+    <div class="sidebar">
+        <ul class="masanger63nd">
+
+            <li class="bmw1e">News</li>
+            <li class="bmw2e">Minecraft Experience</li>
+            <li class="bmw3e">Community</li>
+            <li class="bmw4e">Wallpapers</li>
+
+        </ul>
+        <div class="minecraftgiftcadmenu">
+            <div class="clovnrightstic">
+
+            </div>
+            <p>Creator Learning Portal</p>
+            <p>Minecraft Partner Program</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="grid">
+            <div class="card">
+                <img src="/static/img/Global-Header_Image-Tile_News_570x321.jpg" alt="Minecraft">
+                <h3 class="b">Newest News</h3>
+                <p class="c">The official source for Minecraft updates.</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_BABW_321x321.jpg"
+                     alt="Marketplace">
+                <h3 class="b">Build a Better World Program</h3>
+                <p class="c">Let’s create a better future for everyone.</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/MNCRFT_MAIN_Mojang_321X321.jpg"
+                     alt="Minecraft Realms">
+                <h3 class="b">A Minecraft Movie</h3>
+                <p class="c">Coming April 4</p>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <p class="fightderemember">Careers</p>
+            <p class="fightderemember">Credits</p>
+
+        </div>
+    </div>
+
+</div>
+<div class="containerdf4 ">
+    <div class="sidebar">
+        <ul class="masanger63nd">
+            <li class="bmw1e">Support</li>
+            <li class="bmw2e">Downloads</li>
+        </ul>
+        <div class="minecraftgiftcadmenu">
+            <div class="clovnrightstic">
+
+            </div>
+            <p>Go to Downloads</p>
+            <p>Feedback</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="grid">
+            <div class="card">
+                <img src="/static/img/Global-Header_Image-Tile_Help-Center_570x321.jpg" alt="Minecraft">
+                <h3 class="b">Minecraft</h3>
+                <p class="c">Explore your own unique world, survive the night, and create anything you can imagine!</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_-Tips-For-Beginners-_321x321_02.jpg"
+                     alt="Marketplace">
+                <h3 class="b">Marketplace</h3>
+                <p class="c">Keep your gameplay endlessly inventive and fun.</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_Report-a-Bug_321x321_02.jpg"
+                     alt="Minecraft Realms">
+                <h3 class="b">Minecraft Realms</h3>
+                <p class="c">Play with your friends on your own personal server.</p>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <p class="fightderemember">Game Guides</p>
+            <p class="fightderemember">Realms Tutorials</p>
+
+        </div>
+    </div>
+
+</div>
+
+<section class="pcdownloadminecraftos"
+         style="background-image: url(/static/img/MinecraftLegends_DeluxeEdition_Net_2880x1320-1.jpg)">
+    <div class="container">
+        <div class="title">
+            <img style="height: 5.5rem; width: 20.8125rem;" src="/static/img/legends-logo-480x126.avif" alt="">
+        </div>
+        <p>Select a version</p>
+        <a style="text-decoration: none;color: white" href="{{ url_for("mlse") }}">
+            <div class="version2O">
+                <h3>Standard Edition</h3>
+                <p class="price">$39.99</p>
+                <p class="features">
+                    What’s included:<br>
+                    - Base Game and Launcher<br>
+
+
+                </p>
+                <div style="color: #968f8c; width: 200px;height: 40px; display: flex; align-items: center;justify-content: space-around">
+                    <p>Available with </p>
+                    <span class="gamepass">
+                    Game Pass
+                </span>
+                </div>
+
+            </div>
+        </a>
+
+
+        <div class="version best-value ">
+            <h3>Deluxe Edition</h3>
+            <div class="nomehok">
+                <p class="price">$49.99</p>
+                <div class="numberbestvalue">
+                    Best Value
+                    <img class="playfakesvg" src="/static/img/play-solid.svg" alt="">
+
+
+                </div>
+
+
+            </div>
+
+            <p class="features">
+                What’s included:<br>
+                - Base Game and Launcher<br>
+                - Deluxe Skin Pack DLC
+            </p>
+        </div>
+        <a style="text-decoration: none;color: white" href="{{ url_for("mldse") }}">
+            <div class="version  ">
+                <h3>Deluxe Skin Pack</h3>
+                <div class="nomehok">
+                    <p class="price">$14.99</p>
+
+
+                </div>
+
+                <p class="features">
+                    What’s included:<br>
+                    - Six additional in-game skins<br>
+
+                </p>
+                <div style="color: #968f8c; width: 200px;height: 40px; display: flex; align-items: center;justify-content: space-around">
+                    <p>
+                        *Standard Edition required
+                    </p>
+
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#" class="checkout-button">CHECKOUT <img class="bigimgcheced" src="/static/img/chevron-right-solid.svg"
+                                                          alt=""></a>
+
+        <div class="footer">
+            <p>Already a member? <a style="color: white" href="#">Log in here</a></p>
+            <div class="conseptionpaag">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.75 5C21.8997 5 22.0397 5.02983 22.1699 5.08949C22.3001 5.14915 22.4173 5.22869 22.5215 5.32812C22.6257 5.42756 22.7038 5.54356 22.7559 5.67614C22.8079 5.80871 22.8372 5.95455 22.8438 6.11364V17.8864C22.8438 18.0388 22.8145 18.1813 22.7559 18.3139C22.6973 18.4465 22.6191 18.5658 22.5215 18.6719C22.4238 18.7779 22.3099 18.8575 22.1797 18.9105C22.0495 18.9635 21.9062 18.9934 21.75 19H3.9375C3.78776 19 3.64779 18.9702 3.51758 18.9105C3.38737 18.8509 3.27018 18.7713 3.16602 18.6719C3.06185 18.5724 2.98372 18.4564 2.93164 18.3239C2.87956 18.1913 2.85026 18.0455 2.84375 17.8864V6.11364C2.84375 5.96117 2.87305 5.81866 2.93164 5.68608C2.99023 5.5535 3.06836 5.43419 3.16602 5.32812C3.26367 5.22206 3.3776 5.14252 3.50781 5.08949C3.63802 5.03646 3.78125 5.00663 3.9375 5H21.75ZM21.8438 6H8.84375V8.56392C9.05859 8.491 9.26693 8.45455 9.46875 8.45455C9.72917 8.45455 9.97331 8.50426 10.2012 8.60369C10.429 8.70312 10.6276 8.83902 10.7969 9.01136C10.9661 9.18371 11.0996 9.38589 11.1973 9.6179C11.2949 9.84991 11.3438 10.0985 11.3438 10.3636C11.3438 10.5691 11.3079 10.7812 11.2363 11H21.8438V6ZM6.59375 10.3636C6.59375 10.536 6.6556 10.6851 6.7793 10.8111C6.90299 10.937 7.04948 11 7.21875 11H7.84375V10.3636C7.84375 10.1913 7.7819 10.0421 7.6582 9.91619C7.53451 9.79025 7.38802 9.72727 7.21875 9.72727C7.04948 9.72727 6.90299 9.79025 6.7793 9.91619C6.6556 10.0421 6.59375 10.1913 6.59375 10.3636ZM9.46875 11C9.63802 11 9.78451 10.937 9.9082 10.8111C10.0319 10.6851 10.0938 10.536 10.0938 10.3636C10.0938 10.1913 10.0319 10.0421 9.9082 9.91619C9.78451 9.79025 9.63802 9.72727 9.46875 9.72727C9.29948 9.72727 9.15299 9.79025 9.0293 9.91619C8.9056 10.0421 8.84375 10.1913 8.84375 10.3636V11H9.46875ZM3.84375 6V11H5.45117C5.37956 10.7812 5.34375 10.5691 5.34375 10.3636C5.34375 10.0985 5.39258 9.84991 5.49023 9.6179C5.58789 9.38589 5.72135 9.18371 5.89062 9.01136C6.0599 8.83902 6.25846 8.70312 6.48633 8.60369C6.71419 8.50426 6.95833 8.45455 7.21875 8.45455C7.42057 8.45455 7.62891 8.491 7.84375 8.56392V6H3.84375ZM3.84375 18H7.84375V12.9048L6.4082 14.3565L5.5293 13.4616L6.95508 12H3.84375V18ZM21.8438 18V12H9.73242L11.1582 13.4616L10.2793 14.3565L8.84375 12.9048V18H21.8438Z"
+                          fill="white"/>
+                </svg>
+                <p class="microtext">
+                    Purchase as a gift
+                </p>
+
+
+            </div>
+            <div class="conseptionrac">
+                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.84375 2H6.84375V6H2.84375V2Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.84375 8H8.84375V0H0.84375V8ZM7.84375 7V1H1.84375V7H7.84375Z" fill="white"/>
+                    <path d="M12.8438 2H16.8438V6H12.8438V2Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.8438 8H18.8438V0H10.8438V8ZM17.8438 7V1H11.8438V7H17.8438Z" fill="white"/>
+                    <path d="M6.84375 12H2.84375V16H6.84375V12Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.84375 10H8.84375V18H0.84375V10ZM7.84375 11V17H1.84375V11H7.84375Z" fill="white"/>
+                    <path d="M16.8438 15H15.8438V16H16.8438V15Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M18.8438 10H16.8438V11H17.8438V12H15.8438V13H14.8438V14H12.8438V15H11.8438V13H13.8438V11H12.8438V10H10.8438V12H11.8438V13H10.8438V15H11.8438V16H12.8438V17H10.8438V18H12.8438V17H14.8438V18H17.8438V17H18.8438V14H17.8438V12H18.8438V10ZM17.8438 14V17H14.8438V16H12.8438V15H14.8438V14H15.8438V13H16.8438V14H17.8438ZM11.8438 12H12.8438V11H11.8438V12Z"
+                          fill="white"/>
+                    <path d="M15.8438 10H14.8438V11H15.8438V10Z" fill="white"/>
+                </svg>
+                <p class="microtext">Redeem a copy</p>
+            </div>
+            <div class="conseptionowerworld">
+
+                <p class="microtext">
+                    Other Platforms
+                </p>
+                <svg class="mipmox" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.8438 14L13.8438 14L13.8438 16L11.8438 16L11.8438 14Z" fill="#3D3938"/>
+                    <path d="M9.84375 12L11.8438 12L11.8438 14L9.84375 14L9.84375 12Z" fill="#3D3938"/>
+                    <path d="M7.84375 10L9.84375 10L9.84375 12L7.84375 12L7.84375 10Z" fill="#3D3938"/>
+                    <path d="M5.84375 8L7.84375 8L7.84375 10L5.84375 10L5.84375 8Z" fill="#3D3938"/>
+                    <path d="M13.8438 12L15.8438 12L15.8438 14L13.8438 14L13.8438 12Z" fill="#3D3938"/>
+                    <path d="M15.8438 10L17.8438 10L17.8438 12L15.8438 12L15.8438 10Z" fill="#3D3938"/>
+                    <path d="M17.8438 8L19.8438 8L19.8438 10L17.8438 10L17.8438 8Z" fill="#3D3938"/>
+                </svg>
+
+            </div>
+
+
+            <div class="conseption">
+                <svg class="vga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                          d="M369.9 318.2c44.3 54.3 64.7 98.8 54.4 118.7-7.9 15.1-56.7 44.6-92.6 55.9-29.6 9.3-68.4 13.3-100.4 10.2-38.2-3.7-76.9-17.4-110.1-39C93.3 445.8 87 438.3 87 423.4c0-29.9 32.9-82.3 89.2-142.1 32-33.9 76.5-73.7 81.4-72.6 9.4 2.1 84.3 75.1 112.3 109.5zM188.6 143.8c-29.7-26.9-58.1-53.9-86.4-63.4-15.2-5.1-16.3-4.8-28.7 8.1-29.2 30.4-53.5 79.7-60.3 122.4-5.4 34.2-6.1 43.8-4.2 60.5 5.6 50.5 17.3 85.4 40.5 120.9 9.5 14.6 12.1 17.3 9.3 9.9-4.2-11-.3-37.5 9.5-64 14.3-39 53.9-112.9 120.3-194.4zm311.6 63.5C483.3 127.3 432.7 77 425.6 77c-7.3 0-24.2 6.5-36 13.9-23.3 14.5-41 31.4-64.3 52.8C367.7 197 427.5 283.1 448.2 346c6.8 20.7 9.7 41.1 7.4 52.3-1.7 8.5-1.7 8.5 1.4 4.6 6.1-7.7 19.9-31.3 25.4-43.5 7.4-16.2 15-40.2 18.6-58.7 4.3-22.5 3.9-70.8-.8-93.4zM141.3 43C189 40.5 251 77.5 255.6 78.4c.7 .1 10.4-4.2 21.6-9.7 63.9-31.1 94-25.8 107.4-25.2-63.9-39.3-152.7-50-233.9-11.7-23.4 11.1-24 11.9-9.4 11.2z"/>
+                </svg>
+                <p class="microtext">Xbox <img class="imgcherron2" src="/static/img/arrow-up-solid.svg" alt=""></p>
+
+
+            </div>
+            <div class="conseption">
+                <svg class="vga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                          d="M570.9 372.3c-11.3 14.2-38.8 24.3-38.8 24.3L327 470.2v-54.3l150.9-53.8c17.1-6.1 19.8-14.8 5.8-19.4-13.9-4.6-39.1-3.3-56.2 2.9L327 381.1v-56.4c23.2-7.8 47.1-13.6 75.7-16.8 40.9-4.5 90.9 .6 130.2 15.5 44.2 14 49.2 34.7 38 48.9zm-224.4-92.5v-139c0-16.3-3-31.3-18.3-35.6-11.7-3.8-19 7.1-19 23.4v347.9l-93.8-29.8V32c39.9 7.4 98 24.9 129.2 35.4C424.1 94.7 451 128.7 451 205.2c0 74.5-46 102.8-104.5 74.6zM43.2 410.2c-45.4-12.8-53-39.5-32.3-54.8 19.1-14.2 51.7-24.9 51.7-24.9l134.5-47.8v54.5l-96.8 34.6c-17.1 6.1-19.7 14.8-5.8 19.4 13.9 4.6 39.1 3.3 56.2-2.9l46.4-16.9v48.8c-51.6 9.3-101.4 7.3-153.9-10z"/>
+                </svg>
+                <p class="microtext">PlayStation <img class="imgcherron2" src="/static/img/arrow-up-solid.svg" alt="">
+                </p>
+
+
+            </div>
+            <div class="conseption">
+                <svg class="vga" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"
+                     fill="none" role="presentation">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M12.2311 10.9825C12.2311 7.58915 12.2311 4.19562 12.2311 0.801879C12.2311 0.510841 12.2349 0.507013 12.5334 0.507013C13.587 0.507013 14.638 0.492333 15.6941 0.507013C16.9251 0.523028 18.1131 0.962917 19.0581 1.75266C20.0032 2.54241 20.6475 3.63381 20.8828 4.84322C20.9568 5.23632 20.9944 5.63543 20.995 6.03546C21.0035 9.37601 21.005 12.7161 20.9995 16.0558C21.0053 16.7669 20.8705 17.4721 20.603 18.1309C20.3354 18.7896 19.9403 19.3889 19.4403 19.8942C18.9404 20.3996 18.3456 20.801 17.6901 21.0754C17.0346 21.3498 16.3313 21.4917 15.6207 21.493C14.6067 21.5 13.5927 21.493 12.5787 21.493C12.2305 21.493 12.2305 21.493 12.2305 21.1362L12.2311 10.9825ZM16.4033 9.94149C15.2253 9.91405 14.2859 10.9033 14.2706 12.0164C14.2547 13.1716 15.1966 14.0996 16.2521 14.1584C17.5187 14.2292 18.4893 13.1927 18.4893 12.0796C18.49 10.9008 17.5901 9.96255 16.4033 9.94149Z"
+                          fill="#FCF5F1"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.1374 11.0065V21.2082C10.1374 21.4737 10.1094 21.5012 9.8447 21.5005H5.51755C4.04179 21.5005 2.7497 21.0161 1.67764 19.9987C0.891083 19.2597 0.354659 18.2933 0.143212 17.2345C0.0725124 16.9201 0.0334158 16.5994 0.0265042 16.2771C0.0188511 12.7636 -0.0270682 9.24946 0.039258 5.73785C0.0813497 3.53911 1.20953 1.9435 3.19677 0.986138C3.92763 0.632552 4.71398 0.502989 5.5252 0.504904C6.96078 0.508733 8.39509 0.504904 9.83258 0.504904C10.1298 0.504904 10.1393 0.515115 10.1393 0.824024L10.1374 11.0065ZM8.42634 19.7868V2.20518H8.19738C7.31537 2.20518 6.43272 2.1988 5.55071 2.20901C5.25587 2.21077 4.96168 2.23724 4.67125 2.28815C3.0131 2.58749 1.72292 4.14289 1.72229 5.82721C1.72229 9.28648 1.71144 12.7464 1.72803 16.2057C1.73249 17.2383 2.15851 18.114 2.91552 18.8186C3.6432 19.4952 4.51628 19.7939 5.49842 19.7977C6.41359 19.8015 7.32877 19.7977 8.24394 19.7977C8.29879 19.7977 8.36256 19.7913 8.42634 19.7868Z"
+                          fill="#FCF5F1"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3.2977 6.79522C3.26645 5.77388 4.12678 4.82724 5.25623 4.83107C6.35954 4.8349 7.24538 5.66473 7.23836 6.8399C7.23135 8.01507 6.25049 8.80724 5.23391 8.78235C4.13889 8.75234 3.29068 7.89889 3.2977 6.79522Z"
+                          fill="#FCF5F1"></path>
+                </svg>
+                <p class="microtext">Nintendo <img class="imgcherron2" src="/static/img/arrow-up-solid.svg" alt=""></p>
+
+
+            </div>
+            <div class="conseption">
+                <img class="vga" src="/static/img/Platform-Icon_Steam@2x.png" alt="">
+                <p class="microtext">Steam <img class="imgcherron2" src="/static/img/arrow-up-solid.svg" alt="">
+                </p>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="minecraftimgabzortextabzor">
+    <div class="mipkonnectwindows">
+        <div class="machines">
+            <h3>Playable On</h3>
+            <span class="windows">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                     role="presentation">
+									<path d="M1.25 4.38944L10.4665 3.20581V11.516H1.25062L1.25 4.38944ZM10.4665 12.5795V20.7957L1.25115 19.6138L1.25062 12.5799H10.4665V12.5795ZM11.486 3.07514L23.75 1.5V11.516H11.486V3.07514ZM23.75 12.5795V22.5L11.486 20.9264V12.5795H23.75Z"
+                                          fill="white"></path>
+								</svg>
+                <h4>Windows</h4>
+
+            </span>
+
+
+        </div>
+
+    </div>
+    {#        <div class="conetiosminecraftforwindowsormacprogreasmarketplase">#}
+    {#            <div class="DetailsCompareFeaturesExplore">#}
+    {#                <div class="dicv20io">#}
+    {#                    <button class="details bofe">Details</button>#}
+    {#                    <p class="detaild">Compare Features</p>#}
+    {#                    <p class="detailk">Explore</p>#}
+    {#                </div>#}
+    {#                <div class="linebefore">#}
+    {#                    <div class="classnote">#}
+    {##}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {##}
+    {#            </div>#}
+    {##}
+    {#        </div>#}
+    {##}
+    {#        <div class="helloxoneyminecraftobject">#}
+    {#            <div class="microflex">#}
+    {#                <div class="textkoffe">#}
+    {#                        <span>#}
+    {#                            SCREENSHOTS#}
+    {##}
+    {##}
+    {#                        </span>#}
+    {##}
+    {#                </div>#}
+    {#                <div class="duvui1">#}
+    {##}
+    {#                    <div class="matrolyvideo">#}
+    {#                        <div class="videoindcoment">#}
+    {#                            <div class="ultmateimg">#}
+    {##}
+    {#                            </div>#}
+    {#                            <div class="picle">#}
+    {#                                <span class="text1bios">#}
+    {#                                    Explore your own unique worlds, survive the night, and create anything you can imagine!#}
+    {#                                </span>#}
+    {#                                <span class="text2bios">#}
+    {#                                            Watch the sample video of Minecraft gameplay#}
+    {##}
+    {##}
+    {#                                </span>#}
+    {##}
+    {#                            </div>#}
+    {##}
+    {#                        </div>#}
+    {#                        <div class="imghome">#}
+    {#                            <div class="cuantum1os dicloermoter"></div>#}
+    {#                            <div class="cuantum2os"></div>#}
+    {#                            <div class="cuantum3os"></div>#}
+    {#                            <div class="cuantum4os"></div>#}
+    {#                            <div class="cuantum5os"></div>#}
+    {#                            <div class="cuantum6os"></div>#}
+    {##}
+    {#                        </div>#}
+    {##}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {#            </div>#}
+    {#            <div class="foselecaftinfo">#}
+    {#                <div class="info">#}
+    {##}
+    {#                </div>#}
+    {##}
+    {#            </div>#}
+    {##}
+    {#        </div>#}
+    {#        <section class="domineminecraftinfomicrosoft">#}
+    {#            <div class="muiy34fgoh">#}
+    {#                <h2 class="minetextcv56os">Compare versions</h2>#}
+    {##}
+    {#            </div>#}
+    {#            <div class="main-content">#}
+    {##}
+    {##}
+    {#                <table>#}
+    {#                    <thead>#}
+    {#                    <tr>#}
+    {#                        <td class="b1b">&#8204;</td>#}
+    {#                        <td class="crossmark1b">Java</td>#}
+    {#                        <td class="crossmark2b">Bedrock</td>#}
+    {#                    </tr>#}
+    {#                    </thead>#}
+    {#                    <tbody>#}
+    {##}
+    {#                    <tr>#}
+    {#                        <td>Cross-Platform Compatibility</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {##}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Split screen multiplayer (Available only on consoles)</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Controller/touch support</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Minecraft Marketplace</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Marketplace Pass</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Downloadable Content (DLC)</td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Mods</td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Official featured multiplayer servers</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Realms</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Realms Plus</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Host your own server</td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Join player-hosted multiplayer servers</td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Achievements/Trophies</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>LAN or Wifi Multiplayer</td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Parental Controls with Xbox Live or Microsoft Accounts</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="checkmark">#}
+    {#                            <svg class="c1f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#14c229"#}
+    {#                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    <tr>#}
+    {#                        <td>Ray Tracing</td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                        <td class="crossmark">#}
+    {#                            <svg class="c1x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">#}
+    {#                                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->#}
+    {#                                <path fill="#d62424"#}
+    {#                                      d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>#}
+    {#                            </svg>#}
+    {#                        </td>#}
+    {#                    </tr>#}
+    {#                    </tbody>#}
+    {#                </table>#}
+    {##}
+    {#            </div>#}
+    {##}
+    {#        </section>#}
+    {#    </section>#}
+    <section class="minesmmdivinglingminesection">
+        <div class="followminecraftsmm">
+            <span>FOLLOW MINECRAFT</span>
+        </div>
+        <div class="smmdivimglink">
+            <div class="imglink">
+                <div class="youtube">
+
+                    <a class="dell" target="_blank" href="https://www.youtube.com/minecraft"> <img
+                            class="imgsmmprogrammsimg"
+                            src="/static/img/youtube-brands-solid.svg"
+                            alt=""></a>
+                </div>
+                <div class="instagram">
+
+                    <a class="dell" target="_blank" href="https://www.instagram.com/minecraft/"><img
+                            class="imgsmmprogrammsimg"
+                            src="/static/img/instagram-brands-solid%20(1).svg"
+                            alt=""></a>
+                </div>
+                <div class="facebook">
+
+                    <a class="dell" target="_blank" href="https://www.facebook.com/minecraft/"> <img
+                            class="imgsmmprogrammsimg"
+                            src="/static/img/facebook-f-brands-solid.svg"
+                            alt=""></a>
+                </div>
+                <div class="twiter">
+
+                    <a class="dell" target="_blank" href="https://x.com/Minecraft"> <img class="imgsmmprogrammsimg"
+                                                                                         src="/static/img/x-twitter-brands-solid%20(1).svg"
+                                                                                         alt=""></a>
+                </div>
+                <div class="tiktok">
+
+                    <a class="dell" target="_blank" href="https://www.tiktok.com/@minecraft"><img
+                            class="imgsmmprogrammsimg"
+                            src="/static/img/tiktok-brands-solid.svg"
+                            alt=""></a>
+                </div>
+                <div class="whatsapp">
+
+                    <a class="dell" target="_blank" href="https://www.whatsapp.com/channel/0029VakYS0uKLaHg2yxV2T1p">
+                        <img
+                                class="imgsmmprogrammsimg" src="/static/img/whatsapp-brands-solid.svg" alt=""></a>
+                </div>
+                <div class="discord">
+
+                    <a class="dell" target="_blank" href="https://discord.com/invite/minecraft"><img
+                            class="imgsmmprogrammsimg"
+                            src="/static/img/discord-brands-solid.svg"
+                            alt=""></a>
+                </div>
+                <div class="reddit">
+
+                    <a class="dell" target="_blank" href="https://www.reddit.com/r/Minecraft/"><img
+                            class="imgsmmprogrammsimg"
+                            src="/static/img/reddit-alien-brands-solid.svg"
+                            alt=""></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div class="minisectiondiv">
+        <div class="make-company">
+            <div class="ccopmpany-mine">
+                <div class="company-img">
+                    <img src="/static/img/Mojang2020Logo.png" alt="">
+                    <img src="/static/img/Logo_Xbox_Game_Studio.webp" alt="">
+
+
+                </div>
+                <div class="copmpany-text">
+                    <p class="text-copmany-text1t">
+                        © 2024 Mojang AB. TM Microsoft Corporation.
+                    </p>
+                    <a class="link" href="https://www.minecraft.net/en-us/usage-guidelines">
+                        <div class="text-copmany-text2t">
+                            Minecraft Usage Guidelines
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Games-Comunity">
+            <div class="link-one">
+                <h1 class="game-links">Games</h1>
+
+                   <a class="link" href="{{ url_for("hello") }}">
+                    <div class="text-copmany-text2t one1oner">
+                        Minecraft
+                    </div>
+                </a>
+
+
+                <a class="link" href="{{ url_for("md") }}">
+                    <div class="text-copmany-text2tt one1two">
+                        Minecraft Dungeons
+                    </div>
+                </a>
+                <a class="link" href="{{ url_for("mlde") }}">
+                    <div class="text-copmany-text2ts one1five">Minecraft Legends</div>
+                </a>
+                <a class="link" href="https://education.minecraft.net/en-us">
+                    <div class="text-copmany-text2tr one1six">Minecraft Education</div>
+                </a>
+
+            </div>
+            <div class="link-one1c">
+                <h1 class="game-links">Community</h1>
+                <a class="link" href="https://www.minecraft.net/en-us/community">
+                    <div class="text-copmany-text2io one1tipe">
+                        Community
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/creator">
+                    <div class="text-copmany-text2pi one1site">
+                        Creator Learning Portal
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/mojang-careers">
+                    <div class="text-copmany-text2JF one1mine">
+                        Mojang Studios Careers
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/build-a-better-world">
+                    <div class="text-copmany-text2KP one1Gi">
+                        Build a Better World
+
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+        <div class="games-minecraft-page">
+
+            <div class="link-two">
+                <h1 class="game-links">Shop</h1>
+                <a class="link" href="https://www.minecraft.net/en-us/catalog">
+                    <div class="text-copmany-text2MS one1ZL">
+                        Marketplace
+                    </div>
+                </a>
+                <a class="link" href="https://shop.minecraft.net/products/minecraft-pale-garden-personalized-hoodie">
+                    <div class="text-copmany-text2NB one1AS">
+                        Minecraft Shop
+                    </div>
+                </a>
+
+            </div>
+            <div class="link-3s">
+                <h1 class="game-links">Support</h1>
+                <a class="link" href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners">
+                    <div class="text-copmany-text2PS one1MN">
+                        Tips for Beginners
+                    </div>
+                </a>
+                <a class="link" href="https://help.minecraft.net/hc/en-us">
+                    <div class="text-copmany-text2OI one1OS">
+                        Help
+
+                    </div>
+                </a>
+                <a class="link" href="https://feedback.minecraft.net/hc/en-us">
+                    <div class="text-copmany-text2ME one1KR">
+                        Feedback
+
+                    </div>
+                </a>
+
+                <a class="link" href="https://www.minecraft.net/en-us/sitemap">
+                    <div class="text-copmany-text2IV one1GH">
+                        Site Map
+
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/download">
+                    <div class="text-copmany-text2JR one1NO">
+                        Download
+
+                    </div>
+                </a>
+                <a class="link" href="https://help.minecraft.net/hc/en-us/articles/4408904068621-Feedback-and-Fan-Mail">
+                    <div class="text-copmany-text2NN one1NF">
+                        Contact us
+                    </div>
+                </a>
+
+            </div>
+            <div class="link-4p">
+                <h1 class="game-links">Account</h1>
+
+                <a class="link"
+                   href="https://www.minecraft.net/en-us/login?return_url=https%3A%2F%2Fwww.minecraft.net%2Fen-us%2Fmsaprofile">
+                    <div class="text-copmany-text2CN one1CO">
+                        Profile
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/redeem">
+                    <div class="text-copmany-text2CNS one1COS">
+                        Redeem
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+        <div class="ersb">
+            <img src="/static/img/esrb_2021%20.svg" alt="">
+        </div>
+
+    </div>
+
+
+</section>
+<footer class="microsoft">
+    <div class="languageminidiv">
+        <img class="lengearth" src="/static/img/earth-americas-solid.svg" alt="">
+        <p>English</p>
+        <img class="lengearthf" src="/static/img/chevron-upp-solid.svg" alt="">
+
+    </div>
+    <div class="infomicrosoft">
+        <a target="_blank" class="nonesads" href="https://www.microsoft.com/ru-ru/privacy/privacystatement">Privacy and
+            Cookies</a>
+        <a class="nonesads" href="https://www.minecraft.net/en-us/eula">Terms of use</a>
+        <a class="nonesads" href="https://www.microsoft.com/trademarks">Trademarks</a>
+        <a class="nonesads"
+           href="https://account.microsoft.com/privacy/ad-settings/signedout?refd=www.minecraft.net&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%2Fad-settings%3Frefd%3Dwww.minecraft.net">About
+            our ads</a>
+        <p> © 2025 Microsoft</p>
+
+    </div>
+    <img src="/static/img/Logo_%20Microsoft.svg" alt="">
+
+
+</footer>
+<script src="/static/big%20glov.js"></script>
+</body>
+</html>

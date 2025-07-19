@@ -1,0 +1,53 @@
+{% extends 'Jetboz.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="/static/BuyIndexhtlm.css">
+    <link rel="stylesheet" href="/static/marketplasecss.css">
+{% endblock %}
+
+{% block boxminbuy %}
+    <section class="benalert">
+        <div class="mixbuy">
+
+
+            {% for buy in buyed %}
+                <div class="myproduct">
+
+                    <div style="background-image:url({{ buy.photo }} )" class="imgbuyproduct">
+                    </div>
+                    <div class="buttonProdut">
+                        <p class="neopayp">{{ buy.name }}</p>
+                        <h3 class="ByDefertion">By {{ buy.by }}</h3>
+                        <div class="pricedib">
+                            {{ buy.price }}
+                            <div style="background-image: url(/static/img/Minecraft_Desktop_1366_Minecoin.png)"
+                                 class="coin">
+
+                            </div>
+                        </div>
+                        <div class="buybuttonsdiv">
+                            <a style="text-decoration: none; color: white" href="{{ url_for('order', prod_id=buy.id) }}">
+                                <button class="BuyButton">
+                                    Buy
+                                </button>
+                            </a>
+
+
+                            <form action="{{ url_for('delete_from_cart', buy_id=buy.id) }}" method="POST">
+                                <button type="submit" class="deletebutton">
+                                    <svg class="routedeleteicon" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 448 512">
+                                        <path d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+{% endblock %}

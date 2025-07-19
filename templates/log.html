@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/img/channels4_profile.jpg">
+</head>
+<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("/static/img/feature-16-1920x1280.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        width: 350px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+        color: #fff;
+        background-color: #1d1e1e;
+    }
+
+    .form-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 300px;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .submit {
+        width: 100%;
+        padding: 10px;
+        background: #008746;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .submit:hover {
+        background: #86c959;
+    }
+
+
+    p {
+        margin-top: 15px;
+    }
+
+    a {
+        color: #008746;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .pios {
+        width: 300px;
+        background-color: #1d1e1e;
+        border: #008746 solid 2px;
+        border-radius: 3px;
+        color: white;
+        font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+
+    }
+
+    .pois {
+        width: 300px;
+        background-color: #1d1e1e;
+        border: #008746 solid 2px;
+        border-radius: 3px;
+        color: white;
+        font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .bsj {
+        width: 105px;
+        height: 25px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+</style>
+<div class="container">
+    <div class="form-box" id="loginBox">
+        <img class="bsj" src="/static/img/Logo_%20Microsoft.svg" alt="">
+        <h2>Login</h2>
+        <form action="{{ url_for("Log") }} " method="post">
+            <input class="pois" type="email" placeholder="Email" required name="email">
+            <input class="pios" type="password" placeholder="Password" required name="password">
+            <button class="submit" type="submit">Enter</button>
+            <p>You dont have accaunt <a href="{{ url_for("Reg") }}">Register</a></p>
+        </form>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Minecraft Official Site | Minecraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/static/Minecraft.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Pixelify+Sans:wght@400..700&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/img/Homepage_Download-Launcher_Creeper-Logo_500x500.avif">
+</head>
+<body>
+<header class="minecraftMenu">
+    <img class="Minecraftlogo" src="/static/img/Global-Header_MCCB-Logo_300x51.svg" alt="">
+    <div class="mineihead">
+        <button class="games1">
+            <h4>GAMES</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+        </button>
+        <button class="games2">
+            <h4>SHOP</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+        </button>
+        <button class="games3">
+            <h4>COMMUNITY</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+        </button>
+        <button class="games4">
+            <h4>SUPPORT</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+        </button>
+
+
+    </div>
+    <div class="accsea">
+        <button class="search">
+            <img class="searchimg" src="/static/img/magnifying-glass-solid%20(1).svg" alt="">
+            <h4>SEARCH</h4>
+            <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+
+        </button>
+        {% if user %}
+            <a href="{{ url_for("profile") }}">
+                <button class="accaunt">
+                    <img class="accimg" src="/static/img/lock-solid.svg" alt="">
+                    <h4>ACCOUNT</h4>
+                    <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+
+                </button>
+            </a>
+        {% endif %}
+        {% if not user %}
+            <a href="{{ url_for("Logb") }}">
+                <button class="accaunt">
+                    <img class="accimg" src="/static/img/lock-solid.svg" alt="">
+                    <h4>ACCOUNT</h4>
+                    <img class="imgdawn" src="/static/img/chevron-down-solid.svg" alt="">
+
+                </button>
+            </a>
+        {% endif %}
+
+
+    </div>
+</header>
+<div class="containerdf1 ">
+
+    {#    <div class="minecraftgiftcadmenu">#}
+    {#        <div class="clovnrightstic">#}
+    {##}
+    {#        </div>#}
+    {#        <p>Go to Downloads</p>#}
+    {#        <p>Redeem a Gift Code</p>#}
+    {#    </div>#}
+    {#</div>#}
+    <div class="content1">
+        <div class="grid">
+            <a style="text-decoration: none;color: white" href="{{ url_for("hello") }}">
+                <div class="card">
+                    <img src="/static/img/Global-Header_Image-Tile_MC-Java-Bedrock_570x321.jpg" alt="Minecraft">
+                    <h3 class="b">Minecraft</h3>
+                    <p class="c">Explore your own unique world, survive the night, and create anything you can
+                        imagine!</p>
+                </div>
+            </a>
+            <a style="text-decoration: none;color: white" href="{{ url_for("md") }}">
+                <div class="card2ip">
+                    <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_MC-Dungeons_321x321.jpg"
+                         alt="Marketplace">
+                    <h3 class="b">Minecraft Dungeons</h3>
+                    <p class="c">Discover an action-adventure game inspired by classic dungeon crawlers.</p>
+                </div>
+            </a>
+
+            <a style="text-decoration: none;color: white" href="{{ url_for("mlde") }}">
+                <div class="card2ip">
+                    <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_MC-Legends_321x321.webp"
+                         alt="Minecraft Realms">
+                    <h3 class="b">Minecraft Legends</h3>
+                    <p class="c">Lead your allies to defend the Overworld in this exciting action strategy game.</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="right-sidebar">
+            <p class="fightderemember">Buy Minecraft</p>
+            <p class="fightderemember">Buy Minecraft Triple Bundle</p>
+            <p class="fightderemember">Marketplace Pass</p>
+            <p class="fightderemember">New to Minecraft?</p>
+            <p class="fightderemember">Servers</p>
+            <p class="fightderemember">Try Minecraft Free</p>
+            <p class="fightderemember">Play Minecraft Classic</p>
+
+
+        </div>
+    </div>
+
+</div>
+<div class="containerdf2 ">
+    <div class="sidebar">
+        <ul class="masanger63nd">
+            <li class="bmw1e">Games</li>
+            <a class="bmw2e" href="{{ url_for("mkp") }}">
+                <li>Marketplace</li>
+            </a>
+
+            <li class="bmw3e">Merch</li>
+        </ul>
+        <div class="minecraftgiftcadmenu">
+            <div class="clovnrightstic">
+
+            </div>
+            <p>Redeem a Gift Code</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="grid">
+            <div class="card">
+                <img src="/static/img/Global-Header_Image-Tile_MC-Java-Bedrock_570x321.jpg" alt="Minecraft">
+                <h3 class="b">Minecraft</h3>
+                <p class="c">Explore your own unique world, survive the night, and create anything you can imagine!</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_MC-Dungeons_321x321.jpg"
+                     alt="Marketplace">
+                <h3 class="b">Minecraft Dungeons</h3>
+                <p class="c">Discover an action-adventure game inspired by classic dungeon crawlers.</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_MC-Legends_321x321.webp"
+                     alt="Minecraft Realms">
+                <h3 class="b">Minecraft Legends</h3>
+                <p class="c">Lead your allies to defend the Overworld in this exciting action strategy game.</p>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <p class="fightderememberr">Marketplace Pass</p>
+            <p class="fightderemember">Become a Creator</p>
+            <p class="fightderemember">Become a Partner</p>
+
+        </div>
+    </div>
+
+</div>
+<div class="containerdf3 ">
+    <div class="sidebar">
+        <ul class="masanger63nd">
+
+            <li class="bmw1e">News</li>
+            <li class="bmw2e">Minecraft Experience</li>
+            <li class="bmw3e">Community</li>
+            <li class="bmw4e">Wallpapers</li>
+
+        </ul>
+        <div class="minecraftgiftcadmenu">
+            <div class="clovnrightstic">
+
+            </div>
+            <p>Creator Learning Portal</p>
+            <p>Minecraft Partner Program</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="grid">
+            <div class="card">
+                <img src="/static/img/Global-Header_Image-Tile_News_570x321.jpg" alt="Minecraft">
+                <h3 class="b">Newest News</h3>
+                <p class="c">The official source for Minecraft updates.</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_BABW_321x321.jpg"
+                     alt="Marketplace">
+                <h3 class="b">Build a Better World Program</h3>
+                <p class="c">Let’s create a better future for everyone.</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/MNCRFT_MAIN_Mojang_321X321.jpg"
+                     alt="Minecraft Realms">
+                <h3 class="b">A Minecraft Movie</h3>
+                <p class="c">Coming April 4</p>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <p class="fightderemember">Careers</p>
+            <p class="fightderemember">Credits</p>
+
+        </div>
+    </div>
+
+</div>
+<div class="containerdf4 ">
+    <div class="sidebar">
+        <ul class="masanger63nd">
+            <li class="bmw1e">Support</li>
+            <li class="bmw2e">Downloads</li>
+        </ul>
+        <div class="minecraftgiftcadmenu">
+            <div class="clovnrightstic">
+
+            </div>
+            <p>Go to Downloads</p>
+            <p>Feedback</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="grid">
+            <div class="card">
+                <img src="/static/img/Global-Header_Image-Tile_Help-Center_570x321.jpg" alt="Minecraft">
+                <h3 class="b">Minecraft</h3>
+                <p class="c">Explore your own unique world, survive the night, and create anything you can imagine!</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_-Tips-For-Beginners-_321x321_02.jpg"
+                     alt="Marketplace">
+                <h3 class="b">Marketplace</h3>
+                <p class="c">Keep your gameplay endlessly inventive and fun.</p>
+            </div>
+            <div class="card2ip">
+                <img class="mineumcart" src="/static/img/Global-Header_Image-Tile_Report-a-Bug_321x321_02.jpg"
+                     alt="Minecraft Realms">
+                <h3 class="b">Minecraft Realms</h3>
+                <p class="c">Play with your friends on your own personal server.</p>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <p class="fightderemember">Game Guides</p>
+            <p class="fightderemember">Realms Tutorials</p>
+
+        </div>
+    </div>
+
+</div>
+
+<section class="minematiccolaction">
+
+
+</section>
+<section>
+    <div class="blorem">
+        <div class="buyminecraft">
+            <div class="pixeliydiv">
+                <div class="ferion1">
+
+                </div>
+                <div class="mediumdiv">
+                    <div class="ferion2">
+
+                    </div>
+                    <div class="ferion3">
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="Textminecraft">
+                <h2 class="pieliy">
+                    Bundles of Bravery
+
+                </h2>
+            </div>
+            <div class="textipils">
+                <p class="dibiu">Get ready to muster your courage and remaster your</p>
+                <p class="dibiu">
+                    inventory, because bundles and Hardcore mode are
+                </p>
+                <p class="dibiu">
+                    finally here!
+                </p>
+            </div>
+            <div class="buttomdiv">
+                <button class="Buytn">
+                    <span>PLAY TODAY</span>
+                    <img class="imgcherron" src="/static/img/chevron-right-solid.svg" alt="">
+
+
+                </button>
+                <div class="getmine">
+                   <span class="colget">
+                       Get Minecraft
+                   </span>
+                    <img class="imgcherron2" src="/static/img/arrow-up-solid2.svg" alt="">
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="Minecraftdisk">
+            <img class="minecraftpng vober" src="/static/img/Homepage_Hero-A-1920_Fall-Game-Drop_2560x932.jpg" alt="">
+            <img class="minecraftpng1" src="/static/img/Homepage_Hero_Realms_2560x932_01.jpg" alt="">
+            <img class="minecraftpng2" src="/static/img/HP-Takeover_Media-Block-B_GA-Add-ons_1332x888.jpg"
+                 alt="">
+            <img class="minecraftpng3" src="/static/img/Homepage_Hero_Tips-for-Beginners_2560x932_01.avif" alt="">
+
+        </div>
+
+    </div>
+</section>
+<section class="minecrafttype">
+    <div class="minecraftgames">
+        <h4 class="pire">
+            DISCOVER OUR GAMES
+        </h4>
+
+    </div>
+    <div class="minitype">
+        <div class="minecrafttype2">
+            <div class="minecraft">
+                <img class="dust" src="/static/img/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg" alt="">
+                <div class="minecraftbosstext">
+                    <div class="dddds">
+                        <h2 class="dislae">
+                            Minecraft
+                        </h2>
+
+                    </div>
+
+                    <div class="dddds2">
+                        <p class="minetextforminecraft">
+                            Sandbox Survival, Adventure
+                            <br>
+
+                            Single-player + Multiplayer
+
+                        </p>
+
+
+                    </div>
+                    <div class="minidivstic">
+
+                    </div>
+                    <div class="miniimgdawnicons">
+                        <img class="minecraftdawntwer" src="/static/img/windows-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer" src="/static/img/linux-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer" src="/static/img/xbox-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer" src="/static/img/playstation-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer" src="/static/img/nintendo-switch-online-svgrepo-com.svg" alt="">
+                        <img class="minecraftdawntwer" src="/static/img/apple-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer" src="/static/img/android-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer" src="/static/img/chrome-filled-svgrepo-com.svg" alt="">
+                        <h3 class="minecraftdawntwer">fire</h3>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="minecrafttype2">
+            <div class="minecraft">
+                <img class="dust" src="/static/img/Homepage_Discover-our-games_MC-Dungeons-KeyArt_864x864.webp" alt="">
+                <div class="minecraftbosstext">
+                    <div class="dddds">
+                        <h2 class="dislae">
+
+                            Minecraft Dungeons
+
+                        </h2>
+
+                    </div>
+
+                    <div class="dddds2">
+                        <p class="minetextforminecraft">
+                            Dungeon Crawl, Action RPG
+                            <br>
+
+
+                            Single-player + Multiplayer
+
+                        </p>
+
+
+                    </div>
+                    <div class="minidivstic">
+
+                    </div>
+                    <div class="miniimgdawnicons1">
+                        <img class="minecraftdawntwer1" src="/static/img/windows-brands-solid.svg" alt="">
+
+                        <img class="minecraftdawntwer1" src="/static/img/xbox-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer1" src="/static/img/playstation-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer1" src="/static/img/nintendo-switch-online-svgrepo-com.svg" alt="">
+                        <img class="minecraftdawntwer1" src="/static/img/steam-brands-solid.svg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="minecrafttype2">
+            <div class="minecraft">
+                <img class="dust" src="/static/img/Homepage_Discover-our-games_MC-Legends-KeyArt_864x864.avif" alt="">
+                <div class="minecraftbosstext">
+                    <div class="dddds">
+                        <h2 class="dislae">
+
+                            Minecraft Legends
+
+                        </h2>
+
+                    </div>
+
+                    <div class="dddds2">
+                        <p class="minetextforminecraft">
+                            Action RPG, Strategy
+                            <br>
+
+                            Single-player + Multiplayer
+
+                        </p>
+
+
+                    </div>
+                    <div class="minidivstic">
+
+                    </div>
+                    <div class="miniimgdawnicons1">
+
+                        <img class="minecraftdawntwer1" src="/static/img/windows-brands-solid.svg" alt="">
+
+                        <img class="minecraftdawntwer1" src="/static/img/xbox-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer1" src="/static/img/playstation-brands-solid.svg" alt="">
+                        <img class="minecraftdawntwer1" src="/static/img/nintendo-switch-online-svgrepo-com.svg" alt="">
+                        <img class="minecraftdawntwer1" src="/static/img/steam-brands-solid.svg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="minecrafttype2">
+            <div class="minecraft">
+                <img class="dust" src="/static/img/Homepage_Discover-our-games_MC-Education-KeyArt_864x864.avif" alt="">
+                <div class="minecraftbosstext">
+                    <div class="dddds">
+                        <h2 class="dislae">
+
+                            Minecraft Education
+
+                        </h2>
+
+                    </div>
+
+                    <div class="dddds2">
+                        <p class="minetextforminecraft">
+                            Education, Sandbox Survival, Adventure
+                            <br>
+
+                            Single-player + Multiplayer
+
+                        </p>
+
+
+                    </div>
+                    <div class="minidivstic">
+
+                    </div>
+                    <div class="miniimgdawnicons1">
+                        <img class="minecraftdawntwer1" src="/static/img/windows-brands-solid.svg" alt="">
+
+
+                        <img class="minecraftdawntwer1" src="/static/img/apple-brands-solid.svg" alt="">
+
+                        <img class="minecraftdawntwer1" src="/static/img/chrome-filled-svgrepo-com.svg" alt="">
+                        <img class="minecraftdawntwer1" src="/static/img/android-brands-solid.svg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+<section class="minetypevideo">
+    <div class="minecraftgames">
+        <h4 class="pire">
+            GAMEPLAY TRAILERS
+        </h4>
+
+    </div>
+    <div class="Treylersallminecrafttype">
+        <div class="allbosstreylervideodiv">
+            <div class="minecrafttypenametreylervideodiv">
+                <button class="Minecraft5">
+                <span class="dirtbutton">
+                    <img class="mineminecraftlogo comelogy"
+                         src="/static/img/Homepage_Gameplay-Trailer_MC-OV-logo_300x300.png"
+                         alt="">
+                    Minecrft
+                </span>
+
+                </button>
+                <button class="Minecraft52">
+                <span class="dirtbutton2">
+                     <img class="mineminecraftlogo2"
+                          src="/static/img/Homepage_Gameplay-Trailer_MC-Dungeons-logo_300x300.png"
+                          alt="">
+                    Minecraft Dungeons
+                </span>
+
+                </button>
+                <button class="Minecraft53">
+                <span class="dirtbutton3">
+                    <img class="mineminecraftlogo3"
+                         src="/static/img/Homepage_Gameplay-Trailer_MC-Legends-logo_300x300.webp"
+                         alt="">
+                    Minecraft Legends
+                </span>
+
+                </button>
+                <button class="Minecraft54">
+                <span class="dirtbutton4">
+                     <img class="mineminecraftlogo4"
+                          src="/static/img/Homepage_Gameplay-Trailer_MC-Education-logo_300x300.avif"
+                          alt="">
+                    Minecraft Education
+                </span>
+
+                </button>
+            </div>
+            <div class="traylerminecraftvideos">
+                <div class="playvideo">
+                    <video class="videovideo" autoplay
+                           src="/static/img/Homepage_Gameplay-Trailer_MC-OV_1080x720.webm"></video>
+                    <button class="pleycliker">
+                        <img class="blur" src="/static/img/play-solid.svg" alt="">
+
+                    </button>
+                    <div class="dirtdddirminecrafttextilist">
+                        <div><p>Explore your own unique worlds, survive the night, and create anything you can
+                            imagine!</p>
+                            <p>Watch the sample video of Minecraft gameplay above, or select "watch the trailer" to see
+                                the full video on YouTube.</p></div>
+
+                        <button class="larnmore">
+                            <span class="lernis">Learn More
+                            <img class="imgcherron" src="/static/img/chevron-right-solid.svg" alt=""></span>
+
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="traylerminecraftvideos2os">
+                <div class="playvideo">
+                    <video class="videovideo" autoplay
+                           src="/static/img/Homepage_Gameplay-Trailer_MC-Dungeons_1080x720.webm"></video>
+                    <button class="pleycliker">
+                        <img class="blur" src="/static/img/play-solid.svg" alt="">
+
+                    </button>
+                    <div class="dirtdddirminecrafttextilist">
+                        <div><p>Discover an action-adventure game inspired by classic dungeon crawlers
+
+                        </p>
+                            <p>Watch the sample video of Minecraft Dungeons gameplay above, or select "watch the
+                                trailer" to see the full video on YouTube.
+
+                            </p></div>
+
+                        <button class="larnmore">
+                            <span class="lernis">Learn More
+                            <img class="imgcherron" src="/static/img/chevron-right-solid.svg" alt=""></span>
+
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="traylerminecraftvideos3os">
+                <div class="playvideo">
+                    <video class="videovideo" autoplay
+                           src="/static/img/Homepage_Gameplay-Trailer_MC-Legends_1080x720.webm"></video>
+                    <button class="pleycliker">
+                        <img class="blur" src="/static/img/play-solid.svg" alt="">
+
+                    </button>
+                    <div class="dirtdddirminecrafttextilist">
+                        <div><p>Lead your allies in heroic battles in the action-strategy game Minecraft Legends.</p>
+                            <p>Watch the sample video of Minecraft Legends gameplay above, or select "watch the trailer"
+                                to see the full video on YouTube.
+
+                            </p></div>
+
+                        <button class="larnmore">
+                            <span class="lernis">Learn More
+                            <img class="imgcherron" src="/static/img/chevron-right-solid.svg" alt=""></span>
+
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="traylerminecraftvideos4os">
+                <div class="playvideo">
+                    <video class="videovideo" autoplay
+                           src="/static/img/Homepage_Gameplay-Trailer_MC-EDU_1080x720 (1).webm"></video>
+                    <button class="pleycliker">
+                        <img class="blur" src="/static/img/play-solid.svg" alt="">
+
+                    </button>
+                    <div class="dirtdddirminecrafttextilist">
+                        <div><p>A game-based learning platform supporting thousands of educators in over 100 countries.
+
+                        </p>
+                            <p>Watch the sample video of Minecraft Education gameplay above, or select "watch the
+                                trailer" to see the full video on YouTube.
+
+                            </p></div>
+
+                        <button class="larnmore">
+                            <span class="lernis">Learn More
+                            <img class="imgcherron" src="/static/img/chevron-right-solid.svg" alt=""></span>
+
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+<section class="minecraftnewsdivboss">
+    <div class="newstextnews">
+        <div class="bosstextdiv">
+            <div class="textdiv">
+
+                <h1 class="newstext">
+                    Newest
+                </h1>
+                <h1 class="newstext">
+                    news
+                </h1>
+            </div>
+
+
+            <div class="learnmoretext">
+                <span class="newtextasas">
+                    See all news
+                    <img class="imgcherron2" src="/static/img/arrow-up-solid.svg" alt="">
+                </span>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="claudnewsminecraft">
+        <div class="news1">
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2" style="background-image: url(/static/img/1.21.4-pre-release-1-277x277.avif)">
+
+
+                    </div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh">
+                            <span>
+                                NEWS
+                            </span>
+
+                            </div>
+                            <span class="relase">Minecraft 1.21.4 Pre-Release 1</span>
+                            <p class="relasebuttontext">A Minecraft Java Pre-Release</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2" style="background-image: url(/static/img/EnderStormTile277X277.jpg)">
+
+                    </div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh1">
+                            <span>
+                                MARKETPLACE
+                            </span>
+
+                            </div>
+                            <span class="relase two">LET’S PLAY: ENDER STORM</span>
+                            <p class="relasebuttontext1">Can we survive a deadly End glow-up from Panascais?</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2" style="background-image: url(/static/img/AMM_BTS_tile.webp)">
+
+                    </div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh">
+                            <span>
+                                NEWS
+                            </span>
+
+                            </div>
+                            <span class="relase one">Exclusive insights from A Minecraft Movie</span>
+                            <p class="relasebuttontext onsd">The inside scoop on making the movie </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2" style="background-image: url(/static/img/BlockFriday2024_277x277.jpg)">
+
+                    </div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh1">
+                            <span>
+                                MARKETPLACE
+                            </span>
+
+                            </div>
+                            <span class="relase one">Time for Block Friday</span>
+                            <p class="relasebuttontext">More Minecraft for Even Less</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2" style="background-image: url(/static/img/1.21.4-rc2-277x277.jpg)">
+
+                    </div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh">
+                            <span>
+                                NEWS
+                            </span>
+
+                            </div>
+                            <span class="relase one1">Minecraft 1.21.4 Release Candidate 2</span>
+                            <p class="relasebuttontext">A Minecraft Java Release Candidate</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2" style="background-image: url(/static/img/cauldron-1x1-_1_.jpg)"></div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh1">
+                            <span>
+                               DEEP DIVES
+                            </span>
+
+                            </div>
+                            <span class="relase">Block of the Month: Cauldron</span>
+                            <p class="relasebuttontext">Hubble, bubble, toil and trouble</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="news2">
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2" style="background-image: url(/static/img/trialkey-1x1.jpg)"></div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh1">
+                            <span>
+                                DEEP DIVES
+                            </span>
+
+                            </div>
+                            <span class="relase">Taking Inventory: Trial Key</span>
+                            <p class="relasebuttontext">What will this unlock?</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2"
+                         style="background-image: url(/static/img/Minecraft_TheGardenAwakens_Annoucement_No_Copy_277x277.jpg)">
+
+                    </div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh">
+                            <span>
+                                NEWS
+                            </span>
+
+                            </div>
+                            <span class="relase">The Garden Awakens Community Challenges</span>
+                            <p class="relasebuttontext onsd">Brave the pale garden for some eerie rewards </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2"
+                         style="background-image: url(/static/img/MOJANG_OFFICE_PARTY_MARKETING-BEAT_.net_277x277.jpg)">
+
+                    </div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh">
+                            <span>
+                                NEWS
+                            </span>
+
+                            </div>
+                            <span class="relase">Join our in-game event</span>
+                            <p class="relasebuttontext">Investigate an eerie mystery at our studio!</p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="in1 in div1">
+                <div class="d1">
+                    <div class="d2"
+                         style="background-image: url(/static/img/Splash-Art_The-Garden-Awakens-CC-Item-Collection_277x277.jpg)">
+
+                    </div>
+                    <div class="d1hover1">
+                        <div class="bigdivtexta">
+                            <div class="newsooh1">
+                            <span>
+                               MARKETPLACE
+                            </span>
+
+                            </div>
+                            <span class="relase">Investigate an eerie mystery at our studio!</span>
+                            <p class="relasebuttontext">Wear the latest fashion from our newest biome</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="getminecraftandnewspath">
+    <div class="getminecraflauncherdivbutton">
+        <div class="biddivgetcrepperfaseandtextget">
+            <div class="logoandtext">
+                <img class="getminecraftlogodivget"
+                     src="/static/img/Homepage_Download-Launcher_Creeper-Logo_500x500.avif" alt="">
+                <div class="gettext">
+                    <h2 class="mctext">
+                        Need to redownload?
+                    </h2>
+                    <h2 class="MCtext">
+                        Already own the game, but need the Launcher? Looking for the Linux distribution or server files?
+                        Check out our
+                    </h2>
+                    <h2 class="mctext1">
+                        Downloads page.
+                    </h2>
+
+                </div>
+
+            </div>
+            <button class="buttonbigdiv">
+                <span>
+                    GO TO DOWNLOADS
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+
+    </div>
+    <div class="minecraftmarketplasebigdiv">
+        <div class="imgaddonminecraftwelepen"
+             style="background-image: url(/static/img/HP-Takeover_Media-Block-B_GA-Add-ons_1332x888.jpg); background-size: cover">
+
+        </div>
+        <div class="cangemarketplaseaddontext">
+            <div class="changetbigtext">
+                <div class="nonionbigdiv">
+                    <span class="nonion">Change your game, your way!</span>
+                </div>
+                <div>
+                    <p class="metatezxbr">Whether it’s more cuteness, comedy, or chaos you want, there's an <br> add-on
+                        for you! Choose from the many new free and paid add-ons.
+
+                    </p>
+                </div>
+                <div class="bigaddonnsplasebuttondiv">
+                    <button class="nisan">
+                        Explore Add-ons
+                        <img class="imgcherron" src="/static/img/chevron-right-solid.svg" alt="">
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="minecraftcollectimgfile">
+    <div class="collectimgminecraftfilebigdiv">
+        <div class="idium">
+            <span class="Collectibles">COLLECTIBLES</span>
+            <p class="sansfortext">The world of Minecraft is vast, so why not take <br> it beyond its blocky borders?
+                Customize your <br> device with our favorite Minecraft wallpapers, <br> social banners, and more!</p>
+            <span class="Collectibleseeall">See all collectibles <img class="imgcherron3" src="/static/img/4.svg"
+                                                                      alt=""></span>
+            <div class="idiumimgleftorright">
+                <i id="left" class="fa-solid fa-arrow-left"></i>
+                <i id="right" class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="collectimgminecraftfilebigdiv2">
+        <div class="divcollectimgminecraftfilebigdiv2">
+
+            <div class="minecraftcollektpathimgbigdiv"
+                 style="background-image: url(/static/img/15YA-Hub_Collectables-Carousel-H-0_15YA_414x414_01.jpg); background-size: cover">
+                <div class="homepathinfo">
+                    <div class="bigdivtexta1">
+                        <div class="machinespasesconter">
+                            <div class="newsooh2121">
+                            <span>
+                                WALLPAPER
+                            </span>
+
+                            </div>
+                            <span class="relase one1on">
+                                            15-Year <br> Anniversary
+                                        </span>
+                        </div>
+                        <div class="dawnloadimgbigdiv">
+                            <img class="contexcs" src="/static/img/arrow-down-long-solid.svg" alt="">
+                            <img class="contexcd" src="/static/img/minus-solid.svg" alt="">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="minecraftcollektpathimgbigdiv"
+                 style="background-image: url(/static/img/Homepage_Collectables-Carousel-H_Java-Bedrock_414x414_01.jpg); background-size: cover">
+                <div class="homepathinfo">
+                    <div class="bigdivtexta1">
+                        <div class="machinespasesconter">
+                            <div class="newsooh2121">
+                            <span>
+                                WALLPAPER
+                            </span>
+
+                            </div>
+                            <span class="relase one1on">
+                                            Minecraft <br> Collection
+                                        </span>
+                        </div>
+                        <div class="dawnloadimgbigdiv">
+                            <img class="contexcs" src="/static/img/arrow-down-long-solid.svg" alt="">
+                            <img class="contexcd" src="/static/img/minus-solid.svg" alt="">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="minecraftcollektpathimgbigdiv"
+                 style="background-image: url(/static/img/Homepage_Collectables-Carousel-H-0_MCD_414x414_01.jpg);background-size: cover">
+                <div class="homepathinfo">
+                    <div class="bigdivtexta1">
+                        <div class="machinespasesconter">
+
+                            <div class="newsooh2121">
+                            <span>
+                                WALLPAPER
+                            </span>
+
+                            </div>
+                            <span class="relase one1on">
+                                            Minecraft <br> Dungeons
+                                        </span>
+
+
+                        </div>
+                        <div class="dawnloadimgbigdiv">
+                            <img class="contexcs" src="/static/img/arrow-down-long-solid.svg" alt="">
+                            <img class="contexcd" src="/static/img/minus-solid.svg" alt="">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="minecraftcollektpathimgbigdiv"
+                 style="background-image: url(/static/img/Homepage_Collectables-Carousel-H-0_MCL_414x414_01.jpg);background-size: cover">
+                <div class="homepathinfo">
+                    <div class="bigdivtexta1">
+                        <div class="machinespasesconter">
+                            <div class="newsooh2121">
+                            <span>
+                                WALLPAPER
+                            </span>
+
+                            </div>
+                            <span class="relase one1on">
+                                            Minecraft <br> Legends
+                                        </span>
+                        </div>
+                        <div class="dawnloadimgbigdiv">
+                            <img class="contexcs" src="/static/img/arrow-down-long-solid.svg" alt="">
+                            <img class="contexcd" src="/static/img/minus-solid.svg" alt="">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="minecraftcollektpathimgbigdiv"
+                 style="background-image: url(/static/img/Homepage_Collectables-Carousel-H-0_Burberry_414x414_01.jpg); background-size: cover">
+                <div class="homepathinfo">
+                    <div class="bigdivtexta1">
+                        <div class="machinespasesconter">
+                            <div class="newsooh2121">
+                            <span>
+                                WALLPAPER
+                            </span>
+
+                            </div>
+                            <span class="relase one1on">
+                                            Burberry <br> Collection
+                                        </span>
+                        </div>
+                        <div class="dawnloadimgbigdiv">
+                            <img class="contexcs" src="/static/img/arrow-down-long-solid.svg" alt="">
+                            <img class="contexcd" src="/static/img/minus-solid.svg" alt="">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="minecraftcollektpathimgbigdiv"
+                 style="background-image: url(/static/img/Homepage_Collectables-Carousel-H-0_Crocs_414x414_01.jpg); background-size: cover">
+                <div class="homepathinfo onsdaxc">
+                    <div class="bigdivtexta1">
+                        <div class="machinespasesconter">
+                            <div class="newsooh2121">
+                            <span>
+                                WALLPAPER
+                            </span>
+
+                            </div>
+                            <span class="relase one1on">
+                                            Crocs <br> Collections
+                                        </span>
+                        </div>
+                        <div class="dawnloadimgbigdiv">
+                            <img class="contexcs" src="/static/img/arrow-down-long-solid.svg" alt="">
+                            <img class="contexcd" src="/static/img/minus-solid.svg" alt="">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+<section class="minesmmdivinglingminesection">
+    <div class="followminecraftsmm">
+        <span>FOLLOW MINECRAFT</span>
+    </div>
+    <div class="smmdivimglink">
+        <div class="imglink">
+            <div class="youtube">
+
+                <a class="dell" target="_blank" href="https://www.youtube.com/minecraft"> <img
+                        class="imgsmmprogrammsimg"
+                        src="/static/img/youtube-brands-solid.svg"
+                        alt=""></a>
+            </div>
+            <div class="instagram">
+
+                <a class="dell" target="_blank" href="https://www.instagram.com/minecraft/"><img
+                        class="imgsmmprogrammsimg"
+                        src="/static/img/instagram-brands-solid%20(1).svg"
+                        alt=""></a>
+            </div>
+            <div class="facebook">
+
+                <a class="dell" target="_blank" href="https://www.facebook.com/minecraft/"> <img
+                        class="imgsmmprogrammsimg"
+                        src="/static/img/facebook-f-brands-solid.svg"
+                        alt=""></a>
+            </div>
+            <div class="twiter">
+
+                <a class="dell" target="_blank" href="https://x.com/Minecraft"> <img class="imgsmmprogrammsimg"
+                                                                                     src="/static/img/x-twitter-brands-solid%20(1).svg"
+                                                                                     alt=""></a>
+            </div>
+            <div class="tiktok">
+
+                <a class="dell" target="_blank" href="https://www.tiktok.com/@minecraft"><img class="imgsmmprogrammsimg"
+                                                                                              src="/static/img/tiktok-brands-solid.svg"
+                                                                                              alt=""></a>
+            </div>
+            <div class="whatsapp">
+
+                <a class="dell" target="_blank" href="https://www.whatsapp.com/channel/0029VakYS0uKLaHg2yxV2T1p"> <img
+                        class="imgsmmprogrammsimg" src="/static/img/whatsapp-brands-solid.svg" alt=""></a>
+            </div>
+            <div class="discord">
+
+                <a class="dell" target="_blank" href="https://discord.com/invite/minecraft"><img
+                        class="imgsmmprogrammsimg"
+                        src="/static/img/discord-brands-solid.svg"
+                        alt=""></a>
+            </div>
+            <div class="reddit">
+
+                <a class="dell" target="_blank" href="https://www.reddit.com/r/Minecraft/"><img
+                        class="imgsmmprogrammsimg"
+                        src="/static/img/reddit-alien-brands-solid.svg"
+                        alt=""></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="bottommenu">
+    <div class="minisectiondiv">
+        <div class="make-company">
+            <div class="ccopmpany-mine">
+                <div class="company-img">
+                    <img src="/static/img/Mojang2020Logo.png" alt="">
+                    <img src="/static/img/Logo_Xbox_Game_Studio.webp" alt="">
+
+
+                </div>
+                <div class="copmpany-text">
+                    <p class="text-copmany-text1t">
+                        © 2024 Mojang AB. TM Microsoft Corporation.
+                    </p>
+                    <a class="link" href="https://www.minecraft.net/en-us/usage-guidelines">
+                        <div class="text-copmany-text2t">
+                            Minecraft Usage Guidelines
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Games-Comunity">
+            <div class="link-one">
+                <h1 class="game-links">Games</h1>
+
+                <a class="link" href="{{ url_for("hello") }}">
+                    <div class="text-copmany-text2t one1oner">
+                        Minecraft
+                    </div>
+                </a>
+
+
+                <a class="link" href="{{ url_for("md") }}">
+                    <div class="text-copmany-text2tt one1two">
+                        Minecraft Dungeons
+                    </div>
+                </a>
+                <a class="link" href="{{ url_for("mlde") }}">
+                    <div class="text-copmany-text2ts one1five">Minecraft Legends</div>
+                </a>
+                <a class="link" href="https://education.minecraft.net/en-us">
+                    <div class="text-copmany-text2tr one1six">Minecraft Education</div>
+                </a>
+
+
+            </div>
+            <div class="link-one1c">
+                <h1 class="game-links">Community</h1>
+                <a class="link" href="https://www.minecraft.net/en-us/community">
+                    <div class="text-copmany-text2io one1tipe">
+                        Community
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/creator">
+                    <div class="text-copmany-text2pi one1site">
+                        Creator Learning Portal
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/mojang-careers">
+                    <div class="text-copmany-text2JF one1mine">
+                        Mojang Studios Careers
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/build-a-better-world">
+                    <div class="text-copmany-text2KP one1Gi">
+                        Build a Better World
+
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+        <div class="games-minecraft-page">
+
+            <div class="link-two">
+                <h1 class="game-links">Shop</h1>
+                <a class="link" href="https://www.minecraft.net/en-us/catalog">
+                    <div class="text-copmany-text2MS one1ZL">
+                        Marketplace
+                    </div>
+                </a>
+                <a class="link" href="https://shop.minecraft.net/products/minecraft-pale-garden-personalized-hoodie">
+                    <div class="text-copmany-text2NB one1AS">
+                        Minecraft Shop
+                    </div>
+                </a>
+
+            </div>
+            <div class="link-3s">
+                <h1 class="game-links">Support</h1>
+                <a class="link" href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners">
+                    <div class="text-copmany-text2PS one1MN">
+                        Tips for Beginners
+                    </div>
+                </a>
+                <a class="link" href="https://help.minecraft.net/hc/en-us">
+                    <div class="text-copmany-text2OI one1OS">
+                        Help
+
+                    </div>
+                </a>
+                <a class="link" href="https://feedback.minecraft.net/hc/en-us">
+                    <div class="text-copmany-text2ME one1KR">
+                        Feedback
+
+                    </div>
+                </a>
+
+                <a class="link" href="https://www.minecraft.net/en-us/sitemap">
+                    <div class="text-copmany-text2IV one1GH">
+                        Site Map
+
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/download">
+                    <div class="text-copmany-text2JR one1NO">
+                        Download
+
+                    </div>
+                </a>
+                <a class="link" href="https://help.minecraft.net/hc/en-us/articles/4408904068621-Feedback-and-Fan-Mail">
+                    <div class="text-copmany-text2NN one1NF">
+                        Contact us
+                    </div>
+                </a>
+
+            </div>
+            <div class="link-4p">
+                <h1 class="game-links">Account</h1>
+
+                <a class="link"
+                   href="https://www.minecraft.net/en-us/login?return_url=https%3A%2F%2Fwww.minecraft.net%2Fen-us%2Fmsaprofile">
+                    <div class="text-copmany-text2CN one1CO">
+                        Profile
+                    </div>
+                </a>
+                <a class="link" href="https://www.minecraft.net/en-us/redeem">
+                    <div class="text-copmany-text2CNS one1COS">
+                        Redeem
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+        <div class="ersb">
+            <img src="/static/img/esrb_2021%20.svg" alt="">
+        </div>
+
+    </div>
+
+
+</section>
+<footer class="microsoft">
+    <div class="languageminidiv">
+        <img class="lengearth" src="/static/img/earth-americas-solid.svg" alt="">
+        <p>English</p>
+        <img class="lengearthf" src="/static/img/chevron-upp-solid.svg" alt="">
+
+    </div>
+    <div class="infomicrosoft">
+        <a target="_blank" class="nonesads" href="https://www.microsoft.com/ru-ru/privacy/privacystatement">Privacy and
+            Cookies</a>
+        <a class="nonesads" href="https://www.minecraft.net/en-us/eula">Terms of use</a>
+        <a class="nonesads" href="https://www.microsoft.com/trademarks">Trademarks</a>
+        <a class="nonesads"
+           href="https://account.microsoft.com/privacy/ad-settings/signedout?refd=www.minecraft.net&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%2Fad-settings%3Frefd%3Dwww.minecraft.net">About
+            our ads</a>
+        <p> © 2025 Microsoft</p>
+
+    </div>
+    <img src="/static/img/Logo_%20Microsoft.svg" alt="">
+
+
+</footer>
+<script src="/static/big.js"></script>
+</body>
+</html>

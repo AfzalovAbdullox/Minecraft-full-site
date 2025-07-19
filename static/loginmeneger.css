@@ -1,0 +1,1227 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.minecraftMenu {
+    width: 100%;
+    height: 79px;
+    background-color: #313131;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, .25);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+
+}
+
+.mineihead {
+    width: 1246px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 296px;
+
+
+}
+
+.Minecraftlogo {
+    width: 301px;
+    height: 37px;
+    margin-left: 20px;
+
+
+}
+
+.games {
+    width: 79px;
+    height: 38px;
+    background-color: #313131;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 40px;
+    border: none;
+}
+
+
+.games4 {
+    width: 79px;
+    height: 38px;
+    background-color: #313131;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    margin-right: 40px;
+
+
+}
+
+.games1 {
+    width: 114px;
+    height: 38px;
+    background-color: #313131;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    margin-right: 40px;
+
+
+}
+
+.games2 {
+    width: 99px;
+    height: 38px;
+    background-color: #313131;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    margin-right: 40px;
+
+}
+
+.imgdawn {
+    width: 12px;
+    height: 12px;
+
+}
+
+.accsea {
+    width: 300px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search {
+    width: 99px;
+    height: 38px;
+    background-color: #313131;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+
+}
+
+.searchimg {
+    width: 20px;
+    height: 20px;
+}
+
+.accaunt {
+    width: 120px;
+    height: 38px;
+    background-color: #313131;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+
+}
+
+.accimg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.menegerlogin {
+    width: 100%;
+    height: 1089px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container3000 {
+    width: 760px;
+    background: #f5f5f5;
+    padding: 20px;
+    height: 265px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightorleft {
+    width: 760px;
+    height: 271px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.minecraftMenusignuporreg {
+    width: 103%;
+    height: -81px;
+    background: #d0c5c0;
+    padding: .625rem .5rem;
+    box-shadow: inset 0 -.125rem 0 rgba(0, 0, 0, .2), inset 0 .125rem 0 hsla(0, 0%, 100%, .10196078431372549);
+}
+
+
+.left {
+    width: 48%;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 36px;
+}
+
+.right {
+    width: 48%;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 36px;
+    background-color: #ede5e2;
+}
+
+h2 {
+    font-family: 'Minecraftia', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.btn.microsoftl {
+    background-color: #107c10;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 36px;
+}
+
+.btn:before {
+    box-shadow: inset 0 -4px rgba(0, 0, 0, .25), inset 0 4px hsla(0, 0%, 100%, .35), inset -4px 0 hsla(0, 0%, 100%, .35), inset 4px 0 rgba(0, 0, 0, .25);
+    z-index: -1;
+
+}
+
+.btn:after {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: .7s cubic-bezier(0, .8, .26, .99);
+}
+
+
+.btn.signup {
+    background-color: #d3c6ad;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 36px;
+}
+
+ul li::before {
+    content: '\2713';
+    color: green;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+}
+
+.info {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.asl {
+    text-decoration: none;
+}
+
+.info a {
+    color: #5a9848;
+}
+
+.minisectiondiv {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1e1e1e;
+}
+
+.make-company {
+    width: 590px;
+    height: 262px;
+
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.ccopmpany-mine {
+    width: 100%;
+    height: 155px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.company-img {
+    width: 382px;
+    height: 200px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.copmpany-text {
+    width: 100%;
+    height: 33px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.text-copmany-text1t {
+    color: #313131;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 23px;
+}
+
+.text-copmany-text2t {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+
+.text-copmany-text2tr {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2tr:after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2t:after {
+    display: block;
+    content: " ";
+    width: 147px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2tt {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2tt:after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2ts:after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2io {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+
+}
+
+.text-copmany-text2io:after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2pi {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2pi::after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2JF {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2JF:after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2KP {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2KP:after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2MS {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2MS:after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2NB {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2NB:after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2PS {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2PS:after {
+    display: block;
+    content: " ";
+    width: 97px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2OI {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2OI:after {
+    display: block;
+    content: " ";
+    width: 24px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2ME {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2ME:after {
+    display: block;
+    content: " ";
+    width: 52px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2IV {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2IV:after {
+    display: block;
+    content: " ";
+    width: 52px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2JR {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2JR:after {
+    display: block;
+    content: " ";
+    width: 53px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2NN {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2NN:after {
+    display: block;
+    content: " ";
+    width: 57px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2CN {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2CN:after {
+    display: block;
+    content: " ";
+    width: 34px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.text-copmany-text2CNS {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.text-copmany-text2CNS:after {
+    display: block;
+    content: " ";
+    width: 45px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1oner {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+
+.one1oner:after {
+    display: block;
+    content: " ";
+    width: 48px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1two {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1two:after {
+    display: block;
+    content: " ";
+    width: 108px;
+    height: 1px;
+    background-color: #171615;
+}
+
+
+.one1five {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1five:after {
+    display: block;
+    content: " ";
+    width: 100px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1six {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1six:after {
+    display: block;
+    content: " ";
+    width: 106px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1tipe {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1tipe:after {
+    display: block;
+    content: " ";
+    width: 60px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1site {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1site:after {
+    display: block;
+    content: " ";
+    width: 126px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1mine {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1mine:after {
+    display: block;
+    content: " ";
+    width: 126px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1Gi {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1Gi:after {
+    display: block;
+    content: " ";
+    width: 109px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1ZL {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1ZL:after {
+    display: block;
+    content: " ";
+    width: 65px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1AS {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1AS:after {
+    display: block;
+    content: " ";
+    width: 80px;
+    height: 1px;
+    background-color: #171615;
+}
+
+.one1MN {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1MN:after {
+    color: #A0E081;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+
+}
+
+.one1OS {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+
+}
+
+.one1OS:after {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1KR {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1KR:after {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+
+}
+
+.one1GH {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1GH:after {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1NO {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1NO:after {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1NF {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1NF:after {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1CO {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1CO:after {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1COS {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+}
+
+.one1COS:after {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: white;
+
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.text-copmany-text2t:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2tt:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2ts:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2tr:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2io:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2pi:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2JF:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2KP:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2MS:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2NB:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2PS:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2OI:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2ME:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2IV:hover:after {
+    background-color: #A0E081;
+
+}
+
+.text-copmany-text2JR:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2NN:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2CN:hover:after {
+    background-color: #A0E081;
+}
+
+.text-copmany-text2CNS:hover:after {
+    background-color: #A0E081;
+}
+
+.Games-Comunity {
+    width: 272px;
+    height: 283px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link-one {
+    width: 100%;
+    height: 277px;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 16px;
+    line-height: 14px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.link-one1c {
+    width: 100%;
+    height: 277px;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 16px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.game-links {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 14px;
+    color: white;
+}
+
+.games-minecraft-page {
+    width: 272px;
+    height: 332px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link-two {
+    width: 100%;
+    height: 68px;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    margin-top: 16px;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.link-3s {
+    width: 100%;
+    height: 154px;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 16px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.link-4p {
+    width: 100%;
+    height: 66px;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 16px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.ersb {
+    width: 300px;
+    height: 300px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.microsoft {
+    width: 100%;
+    height: 86px;
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+
+}
+
+.languageminidiv {
+    width: 107px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lengearth {
+    width: 24px;
+    height: 24px;
+}
+
+.lengearthf {
+    width: 15px;
+    height: 15px;
+}
+
+.nonesads {
+    text-decoration: none;
+    color: white;
+
+}
+
+.infomicrosoft {
+    width: 600px;
+    height: 100%;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
